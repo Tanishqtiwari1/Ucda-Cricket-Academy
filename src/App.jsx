@@ -1,22 +1,22 @@
-import { Toaster } from "@/components/ui/toaster"
+import { Toaster } from "@/Components/ui/toaster"
 import { QueryClientProvider } from '@tanstack/react-query'
 import { queryClientInstance } from '@/lib/query-client'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import PageNotFound from './components/lib/PageNotFound';
+import PageNotFound from './Components/lib/PageNotFound';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
-import UserNotRegisteredError from '@/components/UserNotRegisteredError';
-import ScrollToTop from './components/ScrollToTop';
-import Home from './components/pages/Home';
-import Layout from '@/components/Layout';
-import AboutPage from './components/pages/AboutPage';
-import CoachesPage from './components/pages/CoachesPage';
-import ProgramsPage from './components/pages/ProgramsPage';
-import GalleryPage from './components/pages/GalleryPage';
-import AchievementsPage from './components/pages/AchievementsPage';
-import AdmissionsPage from './components/pages/AdmissionsPage';
-import PaymentPage from './components/pages/PaymentPage';
-import ContactPage from './components/pages/ContactPage';
-import FAQPage from './components/pages/FAQPage';
+import UserNotRegisteredError from '@/Components/UserNotRegisteredError';
+import ScrollToTop from './Components/ScrollToTop';
+import Home from './Components/pages/Home';
+import Layout from '@/Components/Layout';
+import AboutPage from './Components/pages/AboutPage';
+import CoachesPage from './Components/pages/CoachesPage';
+import ProgramsPage from './Components/pages/ProgramsPage';
+import GalleryPage from './Components/pages/GalleryPage';
+import AchievementsPage from './Components/pages/AchievementsPage';
+import AdmissionsPage from './Components/pages/AdmissionsPage';
+import PaymentPage from './Components/pages/PaymentPage';
+import ContactPage from './Components/pages/ContactPage';
+import FAQPage from './Components/pages/FAQPage';
 // Add page imports here
 
 const AuthenticatedApp = () => {

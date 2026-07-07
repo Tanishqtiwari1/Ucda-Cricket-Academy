@@ -1,1 +1,1 @@
-export { AuthProvider, useAuth } from '../components/lib/AuthContext.jsx';
+export { AuthProvider, useAuth } from '../Components/lib/AuthContext.jsx';

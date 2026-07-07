@@ -1,8 +1,8 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Navbar from "@/components/Navbar";
-import FooterSection from "@/components/FooterSection";
-import FloatingElements from "@/components/FloatingElements";
+import Navbar from "@/Components/Navbar";
+import FooterSection from "@/Components/FooterSection";
+import FloatingElements from "@/Components/FloatingElements";
 
 export default function Layout() {
   return (

@@ -1,1 +1,1 @@
-export { default } from '../components/lib/PageNotFound.jsx';
+export { default } from '../Components/lib/PageNotFound.jsx';

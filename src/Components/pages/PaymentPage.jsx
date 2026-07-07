@@ -2,7 +2,7 @@ import React, { useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import { MessageCircle, CheckCircle2 } from "lucide-react";
 import { base44 } from "@/api/base44Client";
-import { useToast } from "@/components/ui/use-toast";
+import { useToast } from "@/Components/ui/use-toast";
 
 const QR_IMG = "/images/QR_IMG.jpg";
 const OWNER_WHATSAPP = "918010073509";

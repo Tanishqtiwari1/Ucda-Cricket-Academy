@@ -1,6 +1,6 @@
 import React from "react";
-import HeroSection from "@/components/HeroSection";
-import WhyChooseSection from "@/components/WhyChooseSection";
+import HeroSection from "@/Components/HeroSection";
+import WhyChooseSection from "@/Components/WhyChooseSection";
 
 export default function Home() {
   return (

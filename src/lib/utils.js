@@ -1,1 +1,1 @@
-export { cn, isIframe } from '../components/lib/utils.js';
+export { cn, isIframe } from '../Components/lib/utils.js';

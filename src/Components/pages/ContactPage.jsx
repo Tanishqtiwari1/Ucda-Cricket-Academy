@@ -1,5 +1,5 @@
 import React from "react";
-import ContactSection from "@/components/ContactSection";
+import ContactSection from "@/Components/ContactSection";
 
 export default function ContactPage() {
   return (

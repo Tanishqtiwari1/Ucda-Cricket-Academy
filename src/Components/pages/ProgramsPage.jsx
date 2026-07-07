@@ -1,6 +1,6 @@
 import React from "react";
-import ProgramsSection from "@/components/ProgramsSection";
-import ScheduleFeesSection from "@/components/ScheduleFeesSection";
+import ProgramsSection from "@/Components/ProgramsSection";
+import ScheduleFeesSection from "@/Components/ScheduleFeesSection";
 
 export default function ProgramsPage() {
   return (

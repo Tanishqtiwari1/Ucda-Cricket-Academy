@@ -2,8 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Trophy, Users, Swords, Star, Medal, Target } from "lucide-react";
 
-const TROPHY_IMG = "https://media.base44.com/images/public/6a43e07b6516b719b7a0450e/d79f71201_WhatsAppImage2026-06-30at2046414.jpg";
-const STAR_PLAYER_IMG = "https://media.base44.com/images/public/6a43e07b6516b719b7a0450e/210eda8c8_StarPlayer.jpg";
+const TROPHY_IMG = "/images/TROPHY_IMG.jpg";
+const STAR_PLAYER_IMG = "/images/STAR_PLAYER_IMG.jpg";
 
 function AnimatedCounter({ target, suffix = "" }) {
   const [count, setCount] = useState(0);

@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Award, BookOpen, Target } from "lucide-react";
 
-const COACH_IMG = "https://media.base44.com/images/public/6a43e07b6516b719b7a0450e/61936446d_Updatedcoachpic.jpg";
+const COACH_IMG = "/images/COACH_IMG.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },

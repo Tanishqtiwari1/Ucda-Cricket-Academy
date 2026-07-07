@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Target, Eye } from "lucide-react";
 
-const BALL_IMG = "https://media.base44.com/images/public/6a43e07b6516b719b7a0450e/dded8a49c_WhatsAppImage2026-06-30at20464118.jpg";
+const BALL_IMG = "/images/coach-about.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },

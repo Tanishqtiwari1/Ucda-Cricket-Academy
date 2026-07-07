@@ -3,16 +3,15 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 const IMGS = {
-  beginner: "https://media.base44.com/images/public/6a43e07b6516b719b7a0450e/8b3e349cf_WhatsAppImage2026-06-30at20464119.jpg",
-  intermediate: "https://media.base44.com/images/public/6a43e07b6516b719b7a0450e/bc81b4303_WhatsAppImage2026-06-30at20464120.jpg",
-  advanced: "https://media.base44.com/images/public/6a43e07b6516b719b7a0450e/b0f3549b1_WhatsAppImage2026-06-30at20464110.jpg",
-  match: "https://media.base44.com/images/public/6a43e07b6516b719b7a0450e/318a22f75_WhatsAppImage2026-06-30at20464127.jpg",
-  bowling: "https://media.base44.com/images/public/6a43e07b6516b719b7a0450e/e031bca15_WhatsAppImage2026-06-30at20464113.jpg",
-  batting: "https://media.base44.com/images/public/6a43e07b6516b719b7a0450e/20f32a08f_WhatsAppImage2026-06-30at20464125.jpg",
-  fielding: "https://media.base44.com/images/public/6a43e07b6516b719b7a0450e/32a80bf72_WhatsAppImage2026-06-30at20464116.jpg",
-  wicket: "https://media.base44.com/images/public/6a43e07b6516b719b7a0450e/48973f826_WhatsAppImage2026-06-30at2046415.jpg",
-  fitness: "https://media.base44.com/images/public/6a43e07b6516b719b7a0450e/47ba27b99_WhatsAppImage2026-06-30at2046417.jpg",
-  summer: "https://media.base44.com/images/public/6a43e07b6516b719b7a0450e/5a89f7d94_WhatsAppImage2026-06-30at20464128.jpg",
+  beginner: "/images/beginner.jpg",
+  advanced: "/images/advanced.jpg",
+  match: "/images/match.jpg",
+  bowling: "/images/bowling.jpg",
+  batting: "/images/batting.jpg",
+  fielding: "/images/fielding.jpg",
+  wicket: "/images/wicket.jpg",
+  fitness: "/images/fitness.jpg",
+  summer: "/images/summer.jpg",
 };
 
 const programs = [

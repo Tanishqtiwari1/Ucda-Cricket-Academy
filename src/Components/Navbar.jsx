@@ -37,16 +37,13 @@ export default function Navbar() {
       <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-6">
         <div className="flex items-center justify-between gap-4 h-16 lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
-            <div className="flex flex-col">
-              <span className="text-xl lg:text-2xl font-black tracking-wider text-white">
-                UDCA
-              </span>
-              <span className="text-[10px] lg:text-xs font-mono-jb text-gold tracking-[0.2em] -mt-1">
-                CRICKET ACADEMY
-              </span>
-            </div>
-          </Link>
+          <Link to="/" className="flex items-center">
+  <img
+    src="/images/UDCA_logo.jpg"
+    alt="UDCA Cricket Academy Logo"
+    className="h-12 lg:h-16 w-auto object-contain"
+  />
+</Link>
 
           {/* Desktop Links */}
           <div className="hidden lg:flex items-center gap-3 xl:gap-4">

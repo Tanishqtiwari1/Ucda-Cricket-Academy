@@ -15,7 +15,7 @@ const facilities = [
   { icon: Wrench, title: "Professional Equipment", desc: "Top-quality coaching equipment including side-arm throwers, speed guns, and cones." },
 ];
 
-const FACILITY_IMG = "https://media.base44.com/images/public/6a43e07b6516b719b7a0450e/e031bca15_WhatsAppImage2026-06-30at20464113.jpg";
+const FACILITY_IMG = "/images/FACILITY_IMG.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },

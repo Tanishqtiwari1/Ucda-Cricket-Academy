@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Shield, Users, Dumbbell, Award } from "lucide-react";
 
-const HERO_IMG = "https://media.base44.com/images/public/6a43e07b6516b719b7a0450e/4db917967_starplayer.png";
+const HERO_IMG = "/images/hero-player.png";
 
 const badges = [
   { icon: Award, label: "ICC Level 1 Certified" },

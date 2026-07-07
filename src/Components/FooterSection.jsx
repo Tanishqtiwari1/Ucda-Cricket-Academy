@@ -24,7 +24,7 @@ const programs = [
   "Fielding Drills",
   "Wicket Keeping",
   "Fitness & Conditioning",
-  "Summer Camps",
+  "Winter Cricket Camps",
 ];
 
 export default function FooterSection() {

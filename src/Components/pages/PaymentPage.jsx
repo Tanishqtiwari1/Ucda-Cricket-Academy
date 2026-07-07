@@ -4,7 +4,7 @@ import { MessageCircle, CheckCircle2 } from "lucide-react";
 import { base44 } from "@/api/base44Client";
 import { useToast } from "@/components/ui/use-toast";
 
-const QR_IMG = "https://media.base44.com/images/public/6a43e07b6516b719b7a0450e/797e58c90_WhatsAppImage2026-07-05at030617.jpg";
+const QR_IMG = "/images/QR_IMG.jpg";
 const OWNER_WHATSAPP = "918010073509";
 
 const ADMISSION_FEE = 2000;

@@ -1,0 +1,83 @@
+{
+  "name": "PaymentSubmission",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string"
+    },
+    "parent_name": {
+      "type": "string"
+    },
+    "mobile_number": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "selected_course": {
+      "type": "string"
+    },
+    "fee_type": {
+      "type": "string",
+      "enum": [
+        "Admission Fee",
+        "Course Fee",
+        "Both"
+      ]
+    },
+    "amount_paid": {
+      "type": "number"
+    },
+    "payment_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "transaction_id": {
+      "type": "string"
+    },
+    "payment_status": {
+      "type": "string",
+      "enum": [
+        "Pending",
+        "Completed"
+      ],
+      "default": "Pending"
+    }
+  },
+  "required": [
+    "full_name",
+    "mobile_number",
+    "selected_course",
+    "fee_type",
+    "amount_paid",
+    "payment_date"
+  ],
+  "rls": {
+    "create": null,
+    "read": {
+      "$or": [
+        {
+          "created_by_id": "{{user.id}}"
+        },
+        {
+          "data.email": "{{user.email}}"
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

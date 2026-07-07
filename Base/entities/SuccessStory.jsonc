@@ -1,0 +1,23 @@
+{
+  "name": "SuccessStory",
+  "type": "object",
+  "properties": {
+    "student_name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "achievement": {
+      "type": "string"
+    },
+    "year": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "student_name",
+    "description",
+    "achievement"
+  ]
+}

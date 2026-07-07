@@ -1,1 +1,1 @@
-export { queryClientInstance } from '../components/lib/query-client.js';
+export { queryClientInstance } from '../Components/lib/query-client.js';

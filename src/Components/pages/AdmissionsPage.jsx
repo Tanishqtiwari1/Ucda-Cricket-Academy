@@ -1,5 +1,5 @@
 import React from "react";
-import TrainingProcessSection from "@/components/TrainingProcessSection";
+import TrainingProcessSection from "@/Components/TrainingProcessSection";
 
 export default function AdmissionsPage() {
   return (

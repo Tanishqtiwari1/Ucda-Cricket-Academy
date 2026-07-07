@@ -1,5 +1,5 @@
 import React from "react";
-import AchievementsSection from "@/components/AchievementsSection";
+import AchievementsSection from "@/Components/AchievementsSection";
 
 export default function AchievementsPage() {
   return (

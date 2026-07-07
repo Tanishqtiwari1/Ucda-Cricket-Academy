@@ -1,5 +1,5 @@
 import React from "react";
-import CoachesSection from "@/components/CoachesSection";
+import CoachesSection from "@/Components/CoachesSection";
 
 export default function CoachesPage() {
   return (

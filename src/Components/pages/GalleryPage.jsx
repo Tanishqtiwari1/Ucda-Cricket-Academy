@@ -1,5 +1,5 @@
 import React from "react";
-import GallerySection from "@/components/GallerySection";
+import GallerySection from "@/Components/GallerySection";
 
 export default function GalleryPage() {
   return (

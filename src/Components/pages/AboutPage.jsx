@@ -1,6 +1,6 @@
 import React from "react";
-import AboutSection from "@/components/AboutSection";
-import FacilitiesSection from "@/components/FacilitiesSection";
+import AboutSection from "@/Components/AboutSection";
+import FacilitiesSection from "@/Components/FacilitiesSection";
 
 export default function AboutPage() {
   return (

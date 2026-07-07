@@ -1,1 +1,1 @@
-export { appParams } from '../Components/lib/app-params.js';
+export { appParams } from '../components/lib/app-params.js';

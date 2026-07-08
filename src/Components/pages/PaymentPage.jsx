@@ -55,26 +55,51 @@ export default function PaymentPage() {
 
     const selected_course = needsTrainingType ? form.training_type : "Admission Fee";
 
-    await base44.entities.PaymentSubmission.create({
-      full_name: form.full_name,
-      parent_name: form.parent_name,
-      mobile_number: form.mobile_number,
-      email: form.email,
-      selected_course,
-      fee_type: form.fee_type,
-      amount_paid: amount,
-      payment_date: form.payment_date,
-      transaction_id: form.transaction_id,
-      payment_status: "Pending",
-    });
+    try {
+      try {
+        await base44.entities.PaymentSubmission.create({
+          full_name: form.full_name,
+          parent_name: form.parent_name,
+          mobile_number: form.mobile_number,
+          email: form.email,
+          selected_course,
+          fee_type: form.fee_type,
+          amount_paid: amount,
+          payment_date: form.payment_date,
+          transaction_id: form.transaction_id,
+          payment_status: "Pending",
+        });
+      } catch (recordError) {
+        // The WhatsApp message below is the real-time channel the coach relies on to
+        // see submissions, so a failure saving the backend record shouldn't block it.
+        console.error("Failed to save PaymentSubmission record:", recordError);
+      }
 
-    const text = `New Payment Submission - UDCA Cricket Academy\n\nStudent Name: ${form.full_name}\nMobile Number: ${form.mobile_number}\nFee Type: ${form.fee_type}${needsTrainingType ? `\nTraining Type: ${form.training_type}` : ""}\nAmount Paid: ₹${amount}\nPayment Date: ${form.payment_date}\nTransaction ID: ${form.transaction_id || "N/A"}\nPayment Status: Pending Verification`;
-    const url = `https://wa.me/${OWNER_WHATSAPP}?text=${encodeURIComponent(text)}`;
-    window.open(url, "_blank");
+      const text = `New Payment Submission - UDCA Cricket Academy\n\nStudent Name: ${form.full_name}\nMobile Number: ${form.mobile_number}\nFee Type: ${form.fee_type}${needsTrainingType ? `\nTraining Type: ${form.training_type}` : ""}\nAmount Paid: ₹${amount}\nPayment Date: ${form.payment_date}\nTransaction ID: ${form.transaction_id || "N/A"}\nPayment Status: Pending Verification`;
+      const url = `https://wa.me/${OWNER_WHATSAPP}?text=${encodeURIComponent(text)}`;
+      window.open(url, "_blank");
 
-    setSubmitting(false);
-    setSubmitted(true);
-    toast({ title: "Payment details submitted", description: "We've notified the coach on WhatsApp for confirmation." });
+      setSubmitted(true);
+      setForm({
+        full_name: "",
+        parent_name: "",
+        mobile_number: "",
+        email: "",
+        fee_type: "",
+        training_type: "",
+        payment_date: "",
+        transaction_id: "",
+      });
+      toast({ title: "Payment details submitted", description: "We've notified the coach on WhatsApp for confirmation." });
+    } catch (err) {
+      toast({
+        variant: "destructive",
+        title: "Submission failed",
+        description: err?.message || "Something went wrong while submitting your payment details. Please try again.",
+      });
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
